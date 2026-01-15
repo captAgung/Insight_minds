@@ -1,0 +1,55 @@
+==========================================
+CARA UPDATE AGAR TERLIHAT DI REPOSITORY FAVIAN
+==========================================
+
+UNTUK SEMUA KONTRIBUTOR (RIVALDY251, captAgung, dll):
+
+1. SETUP AWAL (Sekali Saja):
+   - Fork repository: https://github.com/Favianyumna/Insight_minds
+   - Clone fork Anda ke komputer
+   - Setup upstream:
+     git remote add upstream https://github.com/Favianyumna/Insight_minds.git
+
+2. SETIAP KALI UPDATE:
+
+   A. Sync dengan repository Favian:
+      git fetch upstream
+      git merge upstream/main
+
+   B. Edit code Anda...
+
+   C. Commit:
+      git add .
+      git commit -m "feat: deskripsi perubahan"
+      git push origin main
+
+   D. Buat Pull Request:
+      
+      OPSI 1 - Pakai Script (Mudah):
+      - Jalankan: .\BUAT_PULL_REQUEST.ps1
+      - Script akan buka browser otomatis
+      
+      OPSI 2 - Manual:
+      - Buka: https://github.com/YOUR-USERNAME/Insight_minds
+      - Klik "Contribute" → "Open Pull Request"
+      - Isi judul: "feat: [nama fitur]"
+      - Isi deskripsi perubahan
+      - Mention: @Favianyumna
+      - Klik "Create Pull Request"
+
+3. UNTUK FAVIANYUMMA (Merge PR):
+   - Buka: https://github.com/Favianyumna/Insight_minds/pulls
+   - Review setiap PR
+   - Klik "Merge pull request"
+   - Setelah di-merge, kontributor akan muncul otomatis
+
+4. CEK KONTRIBUTOR (Untuk Dosen):
+   - Buka: https://github.com/Favianyumna/Insight_minds/graphs/contributors
+   - Atau jalankan: .\CEK_KONTRIBUTOR.ps1
+
+==========================================
+PENTING:
+- Setiap update HARUS buat Pull Request
+- Favian HARUS merge PR agar terlihat di Contributors
+- Dosen bisa lihat semua di tab "Contributors" dan "Pull requests"
+==========================================
